@@ -12,8 +12,14 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sofia: ["SofiaRegular", "sans-serif"], // Add your SofiaRegular font here
+        poppins: ["Poppins", "sans-serif"], // If you're also using Poppins
+        rubik: ["Rubik", "sans-serif"], // If you're also using Rubik
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
