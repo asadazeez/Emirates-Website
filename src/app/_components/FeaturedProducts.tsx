@@ -5,16 +5,6 @@ import Image from "next/image";
 import Advertismnet from "@public/new.jpg";
 
 
-// const productData = [
-//   {
-//     productImage: ImageTest,
-//     brand: "Ray-ban",
-//     productName: "Ray-Ban RB 4287 6018G",
-//     price: "718.00 AED",
-//     offerPrice: "748.00 AED",
-//   },
-// ];
-
 
 
 

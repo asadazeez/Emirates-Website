@@ -5,7 +5,6 @@ import Facebook from '../svg/Facebook';
 import Twitter from '../svg/Twitter';
 import Instagram from '../svg/Instagram';
 import TikTok from '../svg/TikTok';
-import LogoFooter from '../svg/LogoFooter';
 
 const Footer = () => {
   return (
@@ -18,14 +17,13 @@ const Footer = () => {
         <div className="h-[134px] w-[417px] relative">
           <Image src={logo} fill alt="logo" />
         </div>
-          {/* <LogoFooter/> */}
       </div>
 
       <div className="bg-[#232321] z-50 -mt-10 rounded-t-[48px] px-14 py-10 flex gap-4 justify-between  text-white ">
         <div >
           <h1 className="rubik-semibold text-[36px]">Order Online</h1>
           <p className="text-[20px]">
-            Find your perfect eyewear match at Emirates Optical Store's online
+            Find your perfect eyewear match at Emirates Optical Store&apos;s online
             platform. With a wide range of high-quality options from top brands,
             shopping for eyewear has never been easier. Shop now and elevate
             your style
