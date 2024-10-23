@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css"; // Import your global CSS styles
+import Header from "./_layout/Header";
+import Footer from "./_layout/Footer";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Emirates Opticals",
@@ -26,7 +29,14 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased   ">
+        <Header />
+
+        {children}
+        <Toaster position="top-right" containerClassName="mt-4" />
+
+        <Footer />
+      </body>
     </html>
   );
 }

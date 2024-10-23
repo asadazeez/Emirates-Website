@@ -29,8 +29,8 @@ body {
 @font-face {
   font-family: 'SofiaRegular';
   src: url('/fonts/SofiaRegular.woff') format('woff');
-  font-weight: 400; /* Font weight */
-  font-style: normal; /* Can be 'normal' or 'italic' */
+  font-weight: 400; 
+  font-style: normal; 
 }
 
 /* Poppins Font Definitions */
@@ -93,4 +93,31 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-style: italic;
+}
+
+.fade-enter {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-exit {
+  opacity: 1;
+  transition: opacity 0.6s ease-in;
+}
+
+.fade-exit-active {
+  opacity: 0;
+}
+/* Add this to your global CSS file */
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

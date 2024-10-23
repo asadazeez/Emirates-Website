@@ -1,23 +1,27 @@
 import Advertisement from "./_components/Advertisement";
-import AdvertismentTwo from "./_components/AdvertismentTwo";
+import AdvertisementTwo from "./_components/AdvertisementTwo";
 import Banner from "./_components/Banner";
 import FeaturedProducts from "./_components/FeaturedProducts";
 import Lens from "./_components/Lens";
 import Products from "./_components/Products";
-import Footer from "./_layout/Footer";
-import Header from "./_layout/Header";
+import { frontendApi } from "./apis/apis";
 
-export default function Home() {
+const page = async () => {
+  const response = await frontendApi.getHomepage()
+  const gallery = response.data.data.category
+  const galleryTwo = response.data.data.brand
+
+  
   return (
-    <div className="bg-[#E7E7E3] pt-12 ">
-      <Header />
+    <div className="bg-[#E7E7E3]">
       <Banner />
       <FeaturedProducts />
-      <Advertisement />
-      <AdvertismentTwo />
+      <Advertisement gallery={gallery} />
+      <AdvertisementTwo galleryTwo={galleryTwo} />
       <Products />
       <Lens />
-      <Footer />
     </div>
   );
-}
+};
+export default page;
+

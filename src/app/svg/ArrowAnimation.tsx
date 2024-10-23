@@ -13,8 +13,10 @@ const ArrowAnimation = () => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 92 92"
+          
           enableBackground="new 0 0 92 92"
           xmlSpace="preserve"
+          className="lg:size-12 size-5 sm:size-8"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g

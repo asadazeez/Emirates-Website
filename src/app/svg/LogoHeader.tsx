@@ -7,6 +7,7 @@ const LogoSvg = (props: SVGProps<SVGSVGElement>) => (
     width={240}
     height={78}
     fill="none"
+  className=""
     {...props}
   >
     <path fill="url(#a)" d="M0 0h240v77.275H0V0Z" />
